@@ -34,6 +34,14 @@ public class Employee {
     @Transient
     private int yearsOfService;
 
+    public Employee(String nguyenVanA, String mail, BigDecimal bigDecimal, Gender gender, LocalDate of) {
+        this.fullName = nguyenVanA;
+        this.email = mail;
+        this.salary = bigDecimal;
+        this.gender = gender;
+        this.hireDate = of;
+    }
+
     public Long getId() {
         return id;
     }
